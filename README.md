@@ -11,7 +11,7 @@ TBD
 This IP is new.
 
 # Dependencies
-[OpenG Array Library 4.1.1.14 or Higher] vipm://oglib_error?repo_url=http://www.jkisoft.com/packages
+[OpenG Array Library 4.1.1.14 or Higher] vipm://oglib_array?repo_url=http://www.jkisoft.com/packages
 
 
 # License
