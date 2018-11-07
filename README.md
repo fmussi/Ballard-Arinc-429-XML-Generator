@@ -1,5 +1,5 @@
 # Ballard-Arinc-429-XML-Generator
-This tool is used to generate hardware and parameter files for use with the Ballard Arinc-429 PXIe card. The input to the tool is a flattened Microsoft Excel database file (.xlsx) and the output is a Hardware Configuration File (.xml) and a Parameter Configuration File (.xml) for each core defined in the database.
+This tool is used to generate hardware and parameter files for use with the Ballard Arinc-429 card and the VeriStand Custom Device https://github.com/NIVeriStandAdd-Ons/Ballard-Arinc-429-Custom-Device. The input to the tool is a flattened Microsoft Excel database file (.xlsx) and the output is a Hardware Configuration File (.xml) and a Parameter Configuration File (.xml) for each core defined in the database. Once created, the XML files can be imported in the custom device to populate the VeriStand System Explorer and appropriate channels.
 
 # LabVIEW Version
 LabVIEW 2017
