@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<parameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <channel>
+    <hardwareChannel>0</hardwareChannel>
+    <direction>incoming</direction>
+    <label>
+      <labelDecimal>7</labelDecimal>
+      <parameter>
+        <encoding>BNR</encoding>
+        <signed>true</signed>
+        <startBit>10</startBit>
+        <numberOfBits>19</numberOfBits>
+        <name>07_Parameter 0</name>
+        <unit>psi</unit>
+        <defaultValue>0</defaultValue>
+      </parameter>
+    </label>
+    <label>
+      <labelDecimal>23</labelDecimal>
+      <parameter>
+        <encoding>BNR</encoding>
+        <signed>true</signed>
+        <startBit>10</startBit>
+        <numberOfBits>19</numberOfBits>
+        <name>23_Parameter 0</name>
+        <unit>psi</unit>
+        <defaultValue>0</defaultValue>
+      </parameter>
+    </label>
+  </channel>
+  <channel>
+    <hardwareChannel>16</hardwareChannel>
+    <direction>incoming</direction>
+    <label>
+      <labelDecimal>7</labelDecimal>
+      <transferType>1</transferType>
+      <parameter>
+        <encoding>BNR</encoding>
+        <signed>true</signed>
+        <startBit>10</startBit>
+        <numberOfBits>19</numberOfBits>
+        <name>07_Parameter 0</name>
+        <unit>psi</unit>
+        <defaultValue>50</defaultValue>
+      </parameter>
+    </label>
+    <label>
+      <labelDecimal>23</labelDecimal>
+      <parameter>
+        <encoding>BNR</encoding>
+        <signed>true</signed>
+        <startBit>10</startBit>
+        <numberOfBits>19</numberOfBits>
+        <name>23_Parameter 0</name>
+        <unit>psi</unit>
+        <defaultValue>52</defaultValue>
+      </parameter>
+    </label>
+  </channel>
+</parameters>

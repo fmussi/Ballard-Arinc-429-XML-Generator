@@ -13,6 +13,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="_test LoadUnload.vi" Type="VI" URL="../_test LoadUnload.vi"/>
 		<Item Name="_test_ValidateSchema.vi" Type="VI" URL="../_test_ValidateSchema.vi"/>
+		<Item Name="Ballard_Parameter_ni.lvlib" Type="Library" URL="../../../Source/Libraries/Ballard_Parameter_ni/Ballard_Parameter_ni.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -404,9 +405,6 @@
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-			</Item>
-			<Item Name="mscorlib" Type="VI" URL="mscorlib">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Parameters_Arinc429_XML_Tools.dll" Type="Document" URL="../../../Source/Assemblies/Ballard_Parameter_ni/bin/Debug/Parameters_Arinc429_XML_Tools.dll"/>
 			<Item Name="Run Tests in Active Project.vi" Type="VI" URL="../../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/project/Caraya/Run Tests in Active Project.vi"/>
