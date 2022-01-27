@@ -11,8 +11,12 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="_test LoadUnload.vi" Type="VI" URL="../_test LoadUnload.vi"/>
-		<Item Name="_test_ValidateSchema.vi" Type="VI" URL="../_test_ValidateSchema.vi"/>
+		<Item Name="Tests" Type="Folder">
+			<Item Name="_test Duplicate.vi" Type="VI" URL="../_test Duplicate.vi"/>
+			<Item Name="_test LoadUnload.vi" Type="VI" URL="../_test LoadUnload.vi"/>
+			<Item Name="_test_ValidateSchema.vi" Type="VI" URL="../_test_ValidateSchema.vi"/>
+			<Item Name="_testNewFile.vi" Type="VI" URL="../_testNewFile.vi"/>
+		</Item>
 		<Item Name="Ballard_Parameter_ni.lvlib" Type="Library" URL="../../../Source/Libraries/Ballard_Parameter_ni/Ballard_Parameter_ni.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">

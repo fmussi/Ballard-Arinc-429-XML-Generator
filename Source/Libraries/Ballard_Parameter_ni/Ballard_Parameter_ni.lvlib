@@ -4,4 +4,17 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Item Name="_templates" Type="Folder">
+		<Item Name="_template.vit" Type="VI" URL="../_template.vit"/>
+		<Item Name="_template2.vit" Type="VI" URL="../_template2.vit"/>
+	</Item>
+	<Item Name="_typedefs" Type="Folder">
+		<Item Name="label_type.ctl" Type="VI" URL="../_tyedefs/label_type.ctl"/>
+		<Item Name="parameter_type.ctl" Type="VI" URL="../_tyedefs/parameter_type.ctl"/>
+	</Item>
+	<Item Name="Add Channel.vi" Type="VI" URL="../Add Channel.vi"/>
+	<Item Name="Add Label.vi" Type="VI" URL="../Add Label.vi"/>
+	<Item Name="Add Parameter.vi" Type="VI" URL="../Add Parameter.vi"/>
+	<Item Name="New Parameter File.vi" Type="VI" URL="../New Parameter File.vi"/>
+	<Item Name="Save Parameter File.vi" Type="VI" URL="../Save Parameter File.vi"/>
 </Library>
