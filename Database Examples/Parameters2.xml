@@ -2,10 +2,10 @@
 <parameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <channel>
     <hardwareChannel>0</hardwareChannel>
-    <direction>incoming</direction>
     <label>
       <labelDecimal>7</labelDecimal>
       <parameter>
+        <direction>incoming</direction>
         <encoding>BNR</encoding>
         <signed>true</signed>
         <startBit>10</startBit>
@@ -18,6 +18,7 @@
     <label>
       <labelDecimal>23</labelDecimal>
       <parameter>
+        <direction>incoming</direction>
         <encoding>BNR</encoding>
         <signed>true</signed>
         <startBit>10</startBit>
@@ -30,11 +31,11 @@
   </channel>
   <channel>
     <hardwareChannel>16</hardwareChannel>
-    <direction>incoming</direction>
     <label>
       <labelDecimal>7</labelDecimal>
       <transferType>1</transferType>
       <parameter>
+        <direction>outgoing</direction>
         <encoding>BNR</encoding>
         <signed>true</signed>
         <startBit>10</startBit>
@@ -47,6 +48,7 @@
     <label>
       <labelDecimal>23</labelDecimal>
       <parameter>
+        <direction>outgoing</direction>
         <encoding>BNR</encoding>
         <signed>true</signed>
         <startBit>10</startBit>

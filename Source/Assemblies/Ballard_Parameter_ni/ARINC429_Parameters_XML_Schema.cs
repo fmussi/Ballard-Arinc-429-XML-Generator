@@ -48,8 +48,6 @@ public partial class parametersChannel {
     
     private int hardwareChannelField;
     
-    private parametersChannelDirection directionField;
-    
     private parametersChannelLabel[] labelField;
     
     /// <remarks/>
@@ -63,16 +61,6 @@ public partial class parametersChannel {
     }
     
     /// <remarks/>
-    public parametersChannelDirection direction {
-        get {
-            return this.directionField;
-        }
-        set {
-            this.directionField = value;
-        }
-    }
-    
-    /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("label")]
     public parametersChannelLabel[] label {
         get {
@@ -82,19 +70,6 @@ public partial class parametersChannel {
             this.labelField = value;
         }
     }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public enum parametersChannelDirection {
-    
-    /// <remarks/>
-    incoming,
-    
-    /// <remarks/>
-    outgoing,
 }
 
 /// <remarks/>
@@ -290,6 +265,8 @@ public enum parametersChannelLabelSdi {
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
 public partial class parametersChannelLabelParameter {
     
+    private parametersChannelLabelParameterDirection directionField;
+    
     private parametersChannelLabelParameterEncoding encodingField;
     
     private bool signedField;
@@ -315,6 +292,16 @@ public partial class parametersChannelLabelParameter {
         this.scaleField = 1D;
         this.offsetField = 0D;
         this.defaultValueField = 0D;
+    }
+    
+    /// <remarks/>
+    public parametersChannelLabelParameterDirection direction {
+        get {
+            return this.directionField;
+        }
+        set {
+            this.directionField = value;
+        }
     }
     
     /// <remarks/>
@@ -409,6 +396,19 @@ public partial class parametersChannelLabelParameter {
             this.defaultValueField = value;
         }
     }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+[System.SerializableAttribute()]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+public enum parametersChannelLabelParameterDirection {
+    
+    /// <remarks/>
+    incoming,
+    
+    /// <remarks/>
+    outgoing,
 }
 
 /// <remarks/>
