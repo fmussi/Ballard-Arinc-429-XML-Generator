@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<parameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--***************************************	Rx Channels ***************************************-->
+	<channel>
+		<hardwareChannel>2</hardwareChannel>
+		<label>
+			<labelDecimal>232</labelDecimal>
+			<sdi>00</sdi>
+			<createSSMChannel>false</createSSMChannel>
+			<parameter>
+				<encoding>Discrete</encoding>
+				<startBit>25</startBit>
+				<numberOfBits>1</numberOfBits>
+				<name>Altitude_Rx</name>
+			</parameter>
+		</label>
+		<label>
+			<labelDecimal>232</labelDecimal>
+			<createSSMChannel>false</createSSMChannel>
+			<parameter>
+				<encoding>Discrete</encoding>
+				<startBit>25</startBit>
+				<numberOfBits>1</numberOfBits>
+				<name>Altitude_Rx</name>
+			</parameter>
+		</label>
+	</channel>
+<!--***************************************	Tx Channels ***************************************-->
+	<channel>
+		<hardwareChannel>27</hardwareChannel>
+		<label>
+			<labelDecimal>232</labelDecimal>
+			<sdi>00</sdi>
+			<createSSMChannel>false</createSSMChannel>
+			<parameter>
+				<encoding>Discrete</encoding>
+				<startBit>25</startBit>
+				<numberOfBits>1</numberOfBits>
+				<name>Altitude_Tx</name>
+				<defaultValue>0</defaultValue>
+			</parameter>
+		</label>
+		<label>
+			<labelDecimal>232</labelDecimal>
+			<createSSMChannel>false</createSSMChannel>
+			<parameter>
+				<encoding>Discrete</encoding>
+				<startBit>25</startBit>
+				<numberOfBits>1</numberOfBits>
+				<name>Altitude_Tx</name>
+				<defaultValue>0</defaultValue>
+			</parameter>
+		</label>
+	</channel>
+</parameters>
