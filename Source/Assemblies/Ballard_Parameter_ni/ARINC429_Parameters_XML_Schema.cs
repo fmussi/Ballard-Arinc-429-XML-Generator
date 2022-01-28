@@ -346,7 +346,6 @@ public partial class parametersChannelLabelParameter {
     }
     
     /// <remarks/>
-    [System.ComponentModel.DefaultValueAttribute(1D)]
     public double scale {
         get {
             return this.scaleField;
@@ -357,7 +356,6 @@ public partial class parametersChannelLabelParameter {
     }
     
     /// <remarks/>
-    [System.ComponentModel.DefaultValueAttribute(0D)]
     public double offset {
         get {
             return this.offsetField;

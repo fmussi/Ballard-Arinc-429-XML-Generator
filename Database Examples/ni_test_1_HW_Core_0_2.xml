@@ -12,8 +12,8 @@
 	<bti:channel429 ID="1" name="Channel 0" hardwareChannel="0" monitorMode="Selective">
 		<bti:rxChannel speedKHz="100">
 			<bti:labels>
-				<bti:label ID="2" name="label 7_3" labelDecimal="7" monitor="true"/>
-				<bti:label ID="3" name="label 23_3" labelDecimal="23" monitor="true"/>
+				<bti:label ID="2" name="Label 07" labelDecimal="07" monitor="true"/>
+				<bti:label ID="3" name="Label 23" labelDecimal="23" monitor="true"/>
 			</bti:labels>
 		</bti:rxChannel>
 	</bti:channel429>
@@ -22,14 +22,7 @@
 	<bti:channel429 ID="4" name="Channel 16" hardwareChannel="16">
 		<bti:txChannel speedKHz="100" scheduleMode="Rate" scheduleBuildUnit="Millisecond" highVolt="10" lowVolt="-10" nullVolt="0" cmBiasVolt="0" highRiseTime="1.8" lowRiseTime="1.8">
 			<bti:messages>
-				<bti:message ID="5" name="label 7_3" messageBufferIDRef="6" minRate="10" maxRate="10" labelDecimal="7">
-					<bti:messageBuffers>
-						<bti:messageBuffer ID="6" name="MessageBuffer_Label_7">
-							<bti:rawData>8AAAA8AA</bti:rawData>
-						</bti:messageBuffer>
-					</bti:messageBuffers>
-				</bti:message>
-				<bti:message ID="7" name="label 23_3" messageBufferIDRef="8" minRate="10" maxRate="10" labelDecimal="23">
+				<bti:message ID="7" name="label 23" messageBufferIDRef="8" minRate="10" maxRate="10" labelDecimal="23" monitor="false">
 					<bti:messageBuffers>
 						<bti:messageBuffer ID="8" name="MessageBuffer_Label_27">
 							<bti:rawData>8AAAA8AA</bti:rawData>
