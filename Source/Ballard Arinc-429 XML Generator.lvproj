@@ -25,6 +25,9 @@
 		<Item Name="Controls" Type="Folder" URL="../Controls">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="deps" Type="Folder">
+			<Item Name="Parameters_Arinc429_XML_Tools.dll" Type="Document" URL="../Assemblies/Ballard_Parameter_ni/bin/Debug/Parameters_Arinc429_XML_Tools.dll"/>
+		</Item>
 		<Item Name="SubVIs" Type="Folder" URL="../SubVIs">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -302,8 +305,6 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="CSV to Cluster.vi" Type="VI" URL="../SubVIs/Support/CSV to Cluster.vi"/>
-			<Item Name="Parameters_Arinc429_XML_Tools.dll" Type="Document" URL="../Assemblies/Ballard_Parameter_ni/bin/Debug/Parameters_Arinc429_XML_Tools.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Application" Type="EXE">
@@ -331,7 +332,8 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/Application/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2CB35869-BD97-45BF-B2B7-5D1F8CF29A34}</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Icon.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{8F9246F6-B0CD-48D8-8BB0-8EA035761F05}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.vi</Property>
