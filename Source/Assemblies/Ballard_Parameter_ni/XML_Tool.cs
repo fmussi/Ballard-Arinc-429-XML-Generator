@@ -50,13 +50,35 @@ public partial class parameters
             throw new ApplicationException("\n\nError: 5001, Message: Arinc-429 XML Parameters File, XML Deserialization: " + ex.Message);
         }
     }
-    static public Boolean SerializeXML(string XMLFilepath, parameters Myparameters)
+    /*    static public Boolean SerializeXML(string XMLFilepath, parameters Myparameters)
+        {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(parameters));
+                Stream writer = new FileStream(XMLFilepath, FileMode.OpenOrCreate);
+                serializer.Serialize(writer,Myparameters);
+                writer.Close();
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                //throw new ApplicationException("\n\nError: 5002, Message: Arinc-429 XML Parameters File, XML Serialization: " + ex.Message);
+                throw new ApplicationException("\n\nError: 5002, Message: Arinc-429 XML Parameters File, XML Serialization: " + ex.Message+ "\nException Type: {0}"+ex.GetType().FullName+ "\nSource: {0}"+ex.Source+ "\nStrackTrace: {0}"+ex.StackTrace+"\nTargetSite: {0}"+ex.TargetSite);
+              //  Console.WriteLine("Message: {0}", ex.Message);
+                //Console.WriteLine("Exception Type: {0}", ex.GetType().FullName);
+                //Console.WriteLine("Source: {0}", ex.Source);
+                //Console.WriteLine("StrackTrace: {0}", ex.StackTrace);
+                //Console.WriteLine("TargetSite: {0}", ex.TargetSite);
+            }
+        }*/
+    public Boolean SerializeXML(string XMLFilepath)
     {
         try
         {
             XmlSerializer serializer = new XmlSerializer(typeof(parameters));
             Stream writer = new FileStream(XMLFilepath, FileMode.OpenOrCreate);
-            serializer.Serialize(writer,Myparameters);
+            serializer.Serialize(writer,this);
             writer.Close();
             return true;
 
@@ -64,8 +86,8 @@ public partial class parameters
         catch (Exception ex)
         {
             //throw new ApplicationException("\n\nError: 5002, Message: Arinc-429 XML Parameters File, XML Serialization: " + ex.Message);
-            throw new ApplicationException("\n\nError: 5002, Message: Arinc-429 XML Parameters File, XML Serialization: " + ex.Message+ "\nException Type: {0}"+ex.GetType().FullName+ "\nSource: {0}"+ex.Source+ "\nStrackTrace: {0}"+ex.StackTrace+"\nTargetSite: {0}"+ex.TargetSite);
-          //  Console.WriteLine("Message: {0}", ex.Message);
+            throw new ApplicationException("\n\nError: 5002, Message: Arinc-429 XML Parameters File, XML Serialization: " + ex.Message + "\nException Type: {0}" + ex.GetType().FullName + "\nSource: {0}" + ex.Source + "\nStrackTrace: {0}" + ex.StackTrace + "\nTargetSite: {0}" + ex.TargetSite);
+            //  Console.WriteLine("Message: {0}", ex.Message);
             //Console.WriteLine("Exception Type: {0}", ex.GetType().FullName);
             //Console.WriteLine("Source: {0}", ex.Source);
             //Console.WriteLine("StrackTrace: {0}", ex.StackTrace);

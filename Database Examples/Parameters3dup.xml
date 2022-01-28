@@ -12,7 +12,7 @@
         <numberOfBits>19</numberOfBits>
         <scale>1</scale>
         <offset>0</offset>
-        <name>Altitude_Rx</name>
+        <name>07_Parameter 0</name>
         <unit>psi</unit>
         <defaultValue>0</defaultValue>
       </parameter>
@@ -27,8 +27,8 @@
         <numberOfBits>19</numberOfBits>
         <scale>1</scale>
         <offset>0</offset>
-        <name>Speed_Rx</name>
-        <unit>rpm</unit>
+        <name>23_Parameter 0</name>
+        <unit>psi</unit>
         <defaultValue>0</defaultValue>
       </parameter>
     </label>
@@ -37,6 +37,7 @@
     <hardwareChannel>16</hardwareChannel>
     <label>
       <labelDecimal>7</labelDecimal>
+      <transferType>1</transferType>
       <parameter>
         <direction>outgoing</direction>
         <encoding>BNR</encoding>
@@ -45,9 +46,9 @@
         <numberOfBits>19</numberOfBits>
         <scale>1</scale>
         <offset>0</offset>
-        <name>Altitude_Tx</name>
+        <name>07_Parameter 0</name>
         <unit>psi</unit>
-        <defaultValue>0</defaultValue>
+        <defaultValue>50</defaultValue>
       </parameter>
     </label>
     <label>
@@ -60,9 +61,9 @@
         <numberOfBits>19</numberOfBits>
         <scale>1</scale>
         <offset>0</offset>
-        <name>Speed_Tx</name>
-        <unit>rpm</unit>
-        <defaultValue>0</defaultValue>
+        <name>23_Parameter 0</name>
+        <unit>psi</unit>
+        <defaultValue>52</defaultValue>
       </parameter>
     </label>
   </channel>

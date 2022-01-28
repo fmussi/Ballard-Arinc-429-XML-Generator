@@ -19,7 +19,7 @@
 	</bti:channel429>
 
 <!--***************************************	Tx Channels ***************************************-->
-	<bti:channel429 ID="4" name="Channel 16" hardwareChannel="16">
+	<bti:channel429 ID="4" name="Channel 17" hardwareChannel="17">
 		<bti:txChannel speedKHz="100" scheduleMode="Rate" scheduleBuildUnit="Millisecond" highVolt="10" lowVolt="-10" nullVolt="0" cmBiasVolt="0" highRiseTime="1.8" lowRiseTime="1.8">
 			<bti:messages>
 				<bti:message ID="5" name="label 7" messageBufferIDRef="6" minRate="10" maxRate="10" labelDecimal="7">
