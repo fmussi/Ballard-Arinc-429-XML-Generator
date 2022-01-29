@@ -11,11 +11,15 @@ LabVIEW 2020
 # Built Availability
 Go to Releases section
 
-# Built Availability
-Go to Releases section
+# How to manually build
+1) go to `Source/Assemblies/Ballard_Parameter_ni/` and build the Visual Studio solution (Visual Studio IDE needed)
+2) go to `Source` folder and open the `Ballard Arinc-429 XML Generator.lvproj` file. Be sure that the dll built during step 1 is correctly linked
+3) Build Application and Package build specifications to obtain your package to install
 
 # Quality, Limitations
-This IP is new.
+This IP currently does not support:
+- Creating Asynchronous labels transmission
+- Label names is fixed to the format `label <label number in decimal form>_<sdi value (skip if 4)>`
 
 # Dependencies
 [OpenG Array Library 4.1.1.14 or Higher] vipm://oglib_array?repo_url=http://www.jkisoft.com/packages
