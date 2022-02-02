@@ -72,12 +72,12 @@ public partial class parameters
                 //Console.WriteLine("TargetSite: {0}", ex.TargetSite);
             }
         }*/
-    public Boolean SerializeXML(string XMLFilepath)
+    public Boolean SerializeXML(string XMLFilepath,FileMode mode)
     {
         try
         {
             XmlSerializer serializer = new XmlSerializer(typeof(parameters));
-            Stream writer = new FileStream(XMLFilepath, FileMode.OpenOrCreate);
+            Stream writer = new FileStream(XMLFilepath, mode);
             serializer.Serialize(writer,this);
             writer.Close();
             return true;

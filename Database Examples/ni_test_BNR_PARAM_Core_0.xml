@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<parameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--***************************************	Rx Channels ***************************************-->
+	<channel>
+		<hardwareChannel>4</hardwareChannel>
+		<label>
+			<labelDecimal>23</labelDecimal>
+			<createSSMChannel>false</createSSMChannel>
+			<parameter>
+				<encoding>BNR</encoding>
+				<signed>true</signed>
+				<startBit>13</startBit>
+				<numberOfBits>15</numberOfBits>
+				<name>AIR_SPEED_Rx</name>
+				<scale>0.0625</scale>
+				<offset>0</offset>
+				<unit>rpm</unit>
+			</parameter>
+		</label>
+	</channel>
+<!--***************************************	Tx Channels ***************************************-->
+	<channel>
+		<hardwareChannel>21</hardwareChannel>
+		<label>
+			<labelDecimal>23</labelDecimal>
+			<createSSMChannel>false</createSSMChannel>
+			<parameter>
+				<encoding>BNR</encoding>
+				<signed>true</signed>
+				<startBit>13</startBit>
+				<numberOfBits>15</numberOfBits>
+				<name>AIR_SPEED_Tx</name>
+				<scale>0.0625</scale>
+				<offset>0</offset>
+				<unit>rpm</unit>
+				<defaultValue>0</defaultValue>
+			</parameter>
+		</label>
+	</channel>
+</parameters>
