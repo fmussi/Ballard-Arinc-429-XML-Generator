@@ -1,2 +1,19 @@
 <?xml version="1.0"?>
-<parameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<parameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <channel>
+    <hardwareChannel>0</hardwareChannel>
+    <direction>incoming</direction>
+    <label>
+      <period>0</period>
+      <parameter>
+        <encoding>BCD</encoding>
+        <startBit>0</startBit>
+        <numberOfBits>3</numberOfBits>
+        <scale>0.1</scale>
+        <name>ciccio</name>
+        <unit>ca</unit>
+        <defaultValue>1</defaultValue>
+      </parameter>
+    </label>
+  </channel>
+</parameters>

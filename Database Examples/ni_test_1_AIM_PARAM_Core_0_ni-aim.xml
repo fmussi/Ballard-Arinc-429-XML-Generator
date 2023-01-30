@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
 <parameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <channel>
-    <hardwareChannel>0</hardwareChannel>
+    <hardwareChannel>1</hardwareChannel>
     <direction>incoming</direction>
     <label>
       <labelDecimal>7</labelDecimal>
-      <period>0</period>
       <parameter>
         <encoding>BNR</encoding>
         <signed>true</signed>
@@ -18,7 +17,7 @@
     </label>
     <label>
       <labelDecimal>23</labelDecimal>
-      <period>0</period>
+      <period>10000</period>
       <parameter>
         <encoding>BNR</encoding>
         <signed>true</signed>
@@ -31,11 +30,10 @@
     </label>
   </channel>
   <channel>
-    <hardwareChannel>16</hardwareChannel>
+    <hardwareChannel>2</hardwareChannel>
     <direction>outgoing</direction>
     <label>
       <labelDecimal>7</labelDecimal>
-      <period>0</period>
       <parameter>
         <encoding>BNR</encoding>
         <signed>true</signed>
@@ -48,7 +46,7 @@
     </label>
     <label>
       <labelDecimal>23</labelDecimal>
-      <period>0</period>
+      <period>10000</period>
       <parameter>
         <encoding>BNR</encoding>
         <signed>true</signed>
