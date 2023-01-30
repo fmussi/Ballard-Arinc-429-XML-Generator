@@ -15,8 +15,10 @@
 			<Item Name="_test Duplicate.vi" Type="VI" URL="../_test Duplicate.vi"/>
 			<Item Name="_test LoadUnload.vi" Type="VI" URL="../_test LoadUnload.vi"/>
 			<Item Name="_test_ValidateSchema.vi" Type="VI" URL="../_test_ValidateSchema.vi"/>
+			<Item Name="_testNewFile(AIM).vi" Type="VI" URL="../_testNewFile(AIM).vi"/>
 			<Item Name="_testNewFile.vi" Type="VI" URL="../_testNewFile.vi"/>
 		</Item>
+		<Item Name="AIM_Parameter_ni.lvlib" Type="Library" URL="../../../Source/Libraries/Aim_Parameter_ni/AIM_Parameter_ni.lvlib"/>
 		<Item Name="Ballard_Parameter_ni.lvlib" Type="Library" URL="../../../Source/Libraries/Ballard_Parameter_ni/Ballard_Parameter_ni.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -410,6 +412,7 @@
 				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="AIM_429_Parameter_ni.dll" Type="Document" URL="../../../Source/Assemblies/Aim_Parameter_ni/bin/Debug/AIM_429_Parameter_ni.dll"/>
 			<Item Name="Parameters_Arinc429_XML_Tools.dll" Type="Document" URL="../../../Source/Assemblies/Ballard_Parameter_ni/bin/Debug/Parameters_Arinc429_XML_Tools.dll"/>
 			<Item Name="Run Tests in Active Project.vi" Type="VI" URL="../../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/project/Caraya/Run Tests in Active Project.vi"/>
 		</Item>

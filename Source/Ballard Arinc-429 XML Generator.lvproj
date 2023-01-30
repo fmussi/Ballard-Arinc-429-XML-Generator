@@ -26,11 +26,13 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="deps" Type="Folder">
+			<Item Name="AIM_429_Parameter_ni.dll" Type="Document" URL="../Assemblies/Aim_Parameter_ni/bin/Debug/AIM_429_Parameter_ni.dll"/>
 			<Item Name="Parameters_Arinc429_XML_Tools.dll" Type="Document" URL="../Assemblies/Ballard_Parameter_ni/bin/Debug/Parameters_Arinc429_XML_Tools.dll"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder" URL="../SubVIs">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="AIM_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Aim_Parameter_ni/AIM_Parameter_ni.lvlib"/>
 		<Item Name="Ballard_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Ballard_Parameter_ni/Ballard_Parameter_ni.lvlib"/>
 		<Item Name="Icon.ico" Type="Document" URL="../../builds/Support/Icon.ico"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>

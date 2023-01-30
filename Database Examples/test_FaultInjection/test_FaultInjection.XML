@@ -1,0 +1,43 @@
+<bti:core xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" ID="0" name="CoreName" schemaVersion="1.2">
+	<bti:coreConfiguration>
+		<bti:sequentialLog/>
+		<bti:builtInTest/>
+		<bti:pxi/>
+		<bti:sysMon/>
+		<bti:timing/>
+	</bti:coreConfiguration>
+	<bti:channel429 ID="2" name="channel429 ID2">
+		<bti:txChannel scheduleIDRef="4" speedKHz="100" highVolt="10" lowVolt="-10" nullVolt="0" cmBiasVolt="0" highRiseTime="1.8" lowRiseTime="1.8">
+			<bti:asyncMessageList/>
+			<bti:messages>
+				<bti:message ID="7" name="triggered label" messageBufferIDRef="8" singleShot="true" triggerInput="true" labelDecimal="8">
+					<bti:messageBuffers>
+						<bti:messageBuffer ID="8" name="messageBuffer ID8">
+							<bti:rawData>00000000</bti:rawData>
+						</bti:messageBuffer>
+					</bti:messageBuffers>
+					<bti:triggerInputs>
+						<bti:triggerInput line="PXITRIGC" polarity="High" condition="Active"/>
+					</bti:triggerInputs>
+				</bti:message>
+				<bti:message ID="9" name="periodic label" messageBufferIDRef="10" labelDecimal="5">
+					<bti:messageBuffers>
+						<bti:messageBuffer ID="10" name="messageBuffer ID10"/>
+					</bti:messageBuffers>
+				</bti:message>
+			</bti:messages>
+			<bti:schedules>
+				<bti:schedule ID="4" name="schedule ID4">
+					<bti:schedMessageRef messageIDRef="7" allowAsync="false"/>
+					<bti:schedMessageRef messageIDRef="9" allowAsync="false"/>
+				</bti:schedule>
+			</bti:schedules>
+			<bti:triggerInputs>
+				<bti:triggerInput line="A" polarity="High" condition="Active"/>
+			</bti:triggerInputs>
+		</bti:txChannel>
+	</bti:channel429>
+	<bti:channel429 ID="3" name="channel429 ID3">
+		<bti:rxChannel speedKHz="100"/>
+	</bti:channel429>
+</bti:core>
