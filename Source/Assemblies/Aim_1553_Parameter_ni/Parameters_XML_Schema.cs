@@ -178,7 +178,7 @@ public partial class parametersChannelMajorFrame {
     
     private string nameField;
     
-    private parametersChannelMajorFrameMinorFrameRefs minorFrameRefsField;
+    private string[] minorFrameRefsField;
     
     /// <remarks/>
     public string name {
@@ -191,33 +191,13 @@ public partial class parametersChannelMajorFrame {
     }
     
     /// <remarks/>
-    public parametersChannelMajorFrameMinorFrameRefs minorFrameRefs {
+    [System.Xml.Serialization.XmlArrayItemAttribute("minorFrameRef", IsNullable=false)]
+    public string[] minorFrameRefs {
         get {
             return this.minorFrameRefsField;
         }
         set {
             this.minorFrameRefsField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class parametersChannelMajorFrameMinorFrameRefs {
-    
-    private string minorFrameRefField;
-    
-    /// <remarks/>
-    public string minorFrameRef {
-        get {
-            return this.minorFrameRefField;
-        }
-        set {
-            this.minorFrameRefField = value;
         }
     }
 }
@@ -547,39 +527,123 @@ public enum parametersChannelMessageMessageType {
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
 public partial class parametersChannelMessageParameter {
     
-    private object[] itemsField;
+    private parametersChannelMessageParameterEncoding encodingField;
     
-    private ItemsChoiceType[] itemsElementNameField;
+    private bool signedField;
+    
+    private int startBitField;
+    
+    private int numberOfBitsField;
+    
+    private double scaleField;
+    
+    private double offsetField;
+    
+    private string nameField;
+    
+    private string unitField;
+    
+    private double defaultValueField;
+    
+    public parametersChannelMessageParameter() {
+        this.encodingField = parametersChannelMessageParameterEncoding.BNR;
+        this.signedField = false;
+        this.startBitField = 8;
+        this.scaleField = 1D;
+        this.offsetField = 0D;
+        this.defaultValueField = 0D;
+    }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("defaultValue", typeof(double))]
-    [System.Xml.Serialization.XmlElementAttribute("encoding", typeof(parametersChannelMessageParameterEncoding))]
-    [System.Xml.Serialization.XmlElementAttribute("name", typeof(string))]
-    [System.Xml.Serialization.XmlElementAttribute("numberOfBits", typeof(int))]
-    [System.Xml.Serialization.XmlElementAttribute("offset", typeof(double))]
-    [System.Xml.Serialization.XmlElementAttribute("scale", typeof(double))]
-    [System.Xml.Serialization.XmlElementAttribute("signed", typeof(bool))]
-    [System.Xml.Serialization.XmlElementAttribute("startBit", typeof(int))]
-    [System.Xml.Serialization.XmlElementAttribute("unit", typeof(string))]
-    [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
-    public object[] Items {
+    public parametersChannelMessageParameterEncoding encoding {
         get {
-            return this.itemsField;
+            return this.encodingField;
         }
         set {
-            this.itemsField = value;
+            this.encodingField = value;
         }
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public ItemsChoiceType[] ItemsElementName {
+    [System.ComponentModel.DefaultValueAttribute(false)]
+    public bool signed {
         get {
-            return this.itemsElementNameField;
+            return this.signedField;
         }
         set {
-            this.itemsElementNameField = value;
+            this.signedField = value;
+        }
+    }
+    
+    /// <remarks/>
+    public int startBit {
+        get {
+            return this.startBitField;
+        }
+        set {
+            this.startBitField = value;
+        }
+    }
+    
+    /// <remarks/>
+    public int numberOfBits {
+        get {
+            return this.numberOfBitsField;
+        }
+        set {
+            this.numberOfBitsField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.ComponentModel.DefaultValueAttribute(1D)]
+    public double scale {
+        get {
+            return this.scaleField;
+        }
+        set {
+            this.scaleField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.ComponentModel.DefaultValueAttribute(0D)]
+    public double offset {
+        get {
+            return this.offsetField;
+        }
+        set {
+            this.offsetField = value;
+        }
+    }
+    
+    /// <remarks/>
+    public string name {
+        get {
+            return this.nameField;
+        }
+        set {
+            this.nameField = value;
+        }
+    }
+    
+    /// <remarks/>
+    public string unit {
+        get {
+            return this.unitField;
+        }
+        set {
+            this.unitField = value;
+        }
+    }
+    
+    /// <remarks/>
+    public double defaultValue {
+        get {
+            return this.defaultValueField;
+        }
+        set {
+            this.defaultValueField = value;
         }
     }
 }
@@ -598,38 +662,4 @@ public enum parametersChannelMessageParameterEncoding {
     
     /// <remarks/>
     Discrete,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(IncludeInSchema=false)]
-public enum ItemsChoiceType {
-    
-    /// <remarks/>
-    defaultValue,
-    
-    /// <remarks/>
-    encoding,
-    
-    /// <remarks/>
-    name,
-    
-    /// <remarks/>
-    numberOfBits,
-    
-    /// <remarks/>
-    offset,
-    
-    /// <remarks/>
-    scale,
-    
-    /// <remarks/>
-    signed,
-    
-    /// <remarks/>
-    startBit,
-    
-    /// <remarks/>
-    unit,
 }
