@@ -22,26 +22,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="1553" Type="Folder">
-			<Item Name="_controls" Type="Folder">
-				<Item Name="1553_Data.ctl" Type="VI" URL="../1553/_controls/1553_Data.ctl"/>
-				<Item Name="1553_formatting.ctl" Type="VI" URL="../1553/_controls/1553_formatting.ctl"/>
-				<Item Name="1553_Frames.ctl" Type="VI" URL="../1553/_controls/1553_Frames.ctl"/>
-				<Item Name="1553_messages.ctl" Type="VI" URL="../1553/_controls/1553_messages.ctl"/>
-				<Item Name="1553_Parameters.ctl" Type="VI" URL="../1553/_controls/1553_Parameters.ctl"/>
-				<Item Name="1553_Parameters_key.ctl" Type="VI" URL="../1553/_controls/1553_Parameters_key.ctl"/>
-				<Item Name="1553_State.ctl" Type="VI" URL="../1553/_controls/1553_State.ctl"/>
-				<Item Name="aim1553_cluster.ctl" Type="VI" URL="../1553/_controls/aim1553_cluster.ctl"/>
-			</Item>
-			<Item Name="parsers" Type="Folder">
-				<Item Name="deserialize (Frames).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Frames).vi"/>
-				<Item Name="deserialize (Messages).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Messages).vi"/>
-				<Item Name="deserialize (Parameters).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Parameters).vi"/>
-				<Item Name="xlsx to Cluster (AIM - 1553).vi" Type="VI" URL="../1553/_subVIs/parsers/xlsx to Cluster (AIM - 1553).vi"/>
-			</Item>
-			<Item Name="aim1553sandbox.vi" Type="VI" URL="../../Tests/_sandbox/aim1553sandbox.vi"/>
-			<Item Name="Parameter XML Write (AIM-1533).vi" Type="VI" URL="../1553/_subVIs/Parameter XML Write (AIM-1533).vi"/>
-		</Item>
 		<Item Name="Controls" Type="Folder" URL="../Controls">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -58,7 +38,6 @@
 			<Item Name="Ballard_429_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Ballard_Parameter_ni/Ballard_429_Parameter_ni.lvlib"/>
 		</Item>
 		<Item Name="Icon.ico" Type="Document" URL="../../builds/Support/Icon.ico"/>
-		<Item Name="Main (1553).vi" Type="VI" URL="../Main (1553).vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
