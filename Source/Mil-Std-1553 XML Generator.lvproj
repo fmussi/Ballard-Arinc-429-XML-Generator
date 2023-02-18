@@ -142,6 +142,10 @@
 				<Item Name="Parameter Filter - By SDI.vi" Type="VI" URL="../SubVIs/Support/Parameter Filter - By SDI.vi"/>
 				<Item Name="Parameter Filter.vi" Type="VI" URL="../SubVIs/Support/Parameter Filter.vi"/>
 				<Item Name="Read Excel (xlsx).vi" Type="VI" URL="../SubVIs/Support/Read Excel (xlsx).vi"/>
+				<Item Name="reshape array (AIM-1553).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553).vi"/>
+				<Item Name="reshape array (AIM-1553-frames).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553-frames).vi"/>
+				<Item Name="reshape array (AIM-1553-messages).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553-messages).vi"/>
+				<Item Name="reshape array (AIM-1553-parameters).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553-parameters).vi"/>
 				<Item Name="Select Self Test Bus Channels.vi" Type="VI" URL="../SubVIs/Support/Select Self Test Bus Channels.vi"/>
 				<Item Name="Write to Text File (with Core and Type).vi" Type="VI" URL="../SubVIs/Support/Write to Text File (with Core and Type).vi"/>
 				<Item Name="xlsx to Cluster.vi" Type="VI" URL="../SubVIs/Support/xlsx to Cluster.vi"/>
@@ -163,7 +167,6 @@
 		</Item>
 		<Item Name="Icon.ico" Type="Document" URL="../../builds/Support/Icon.ico"/>
 		<Item Name="Main (1553).vi" Type="VI" URL="../Main (1553).vi"/>
-		<Item Name="reshape array (AIM-1553).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="1D Array to String__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/1D Array to String__ogtk.vi"/>
@@ -720,14 +723,16 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="1553 Acyclic Transfer.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM MIL-STD-1553/1553 Acyclic Transfer.vi"/>
-		<Item Name="1553 BC to RT Transfer.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM MIL-STD-1553/1553 BC to RT Transfer.vi"/>
-		<Item Name="1553 IRIG.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM MIL-STD-1553/1553 IRIG.vi"/>
-		<Item Name="1553 Read Version.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM MIL-STD-1553/1553 Read Version.vi"/>
-		<Item Name="1553 Recording.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM MIL-STD-1553/1553 Recording.vi"/>
-		<Item Name="1553 RT to BC Transfer.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM MIL-STD-1553/1553 RT to BC Transfer.vi"/>
-		<Item Name="aimTest1553.vi" Type="VI" URL="../../Tests/_sandbox/aimTest1553.vi"/>
-		<Item Name="loopbackSupported.vi" Type="VI" URL="../../../../Azdo/emea-aim-429-instrument-driver-1201/examples_dev/loopbackSupported.vi"/>
+		<Item Name="AIM samples" Type="Folder">
+			<Item Name="1553 Acyclic Transfer.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM MIL-STD-1553/1553 Acyclic Transfer.vi"/>
+			<Item Name="1553 BC to RT Transfer.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM MIL-STD-1553/1553 BC to RT Transfer.vi"/>
+			<Item Name="1553 IRIG.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM MIL-STD-1553/1553 IRIG.vi"/>
+			<Item Name="1553 Read Version.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM MIL-STD-1553/1553 Read Version.vi"/>
+			<Item Name="1553 Recording.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM MIL-STD-1553/1553 Recording.vi"/>
+			<Item Name="1553 RT to BC Transfer.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM MIL-STD-1553/1553 RT to BC Transfer.vi"/>
+			<Item Name="aimTest1553.vi" Type="VI" URL="../../Tests/_sandbox/aimTest1553.vi"/>
+			<Item Name="loopbackSupported.vi" Type="VI" URL="../../../../Azdo/emea-aim-429-instrument-driver-1201/examples_dev/loopbackSupported.vi"/>
+		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="1553 - Acyclic Send.vi" Type="VI" URL="/&lt;instrlib&gt;/_AIM MIL-STD-1553/PCI-1553 Mid-Level Release/1553 - Acyclic Send.vi"/>
