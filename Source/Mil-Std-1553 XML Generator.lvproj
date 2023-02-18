@@ -163,6 +163,7 @@
 		</Item>
 		<Item Name="Icon.ico" Type="Document" URL="../../builds/Support/Icon.ico"/>
 		<Item Name="Main (1553).vi" Type="VI" URL="../Main (1553).vi"/>
+		<Item Name="reshape array (AIM-1553).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="1D Array to String__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/1D Array to String__ogtk.vi"/>
