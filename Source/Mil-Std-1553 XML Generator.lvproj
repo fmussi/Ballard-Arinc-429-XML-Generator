@@ -30,11 +30,13 @@
 				<Item Name="1553_minorFrames.ctl" Type="VI" URL="../1553/_controls/1553_minorFrames.ctl"/>
 				<Item Name="1553_Parameters.ctl" Type="VI" URL="../1553/_controls/1553_Parameters.ctl"/>
 				<Item Name="1553_Parameters_key.ctl" Type="VI" URL="../1553/_controls/1553_Parameters_key.ctl"/>
+				<Item Name="1553_RT_list.ctl" Type="VI" URL="../1553/_controls/1553_RT_list.ctl"/>
 				<Item Name="1553_State.ctl" Type="VI" URL="../1553/_controls/1553_State.ctl"/>
 				<Item Name="aim1553_cluster.ctl" Type="VI" URL="../1553/_controls/aim1553_cluster.ctl"/>
 			</Item>
 			<Item Name="parsers" Type="Folder">
 				<Item Name="deserialize (Frames).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Frames).vi"/>
+				<Item Name="deserialize (HW).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (HW).vi"/>
 				<Item Name="deserialize (Messages).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Messages).vi"/>
 				<Item Name="deserialize (Parameters).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Parameters).vi"/>
 				<Item Name="xlsx to Cluster (AIM - 1553).vi" Type="VI" URL="../1553/_subVIs/parsers/xlsx to Cluster (AIM - 1553).vi"/>
@@ -61,10 +63,7 @@
 			<Item Name="Refresh Match Settings.ctl" Type="VI" URL="../Controls/Refresh Match Settings.ctl"/>
 			<Item Name="State.ctl" Type="VI" URL="../Controls/State.ctl"/>
 		</Item>
-		<Item Name="deps" Type="Folder">
-			<Item Name="AIM_429_Parameter_ni.dll" Type="Document" URL="../Assemblies/Aim_Parameter_ni/bin/Debug/AIM_429_Parameter_ni.dll"/>
-			<Item Name="Parameters_Arinc429_XML_Tools.dll" Type="Document" URL="../Assemblies/Ballard_Parameter_ni/bin/Debug/Parameters_Arinc429_XML_Tools.dll"/>
-		</Item>
+		<Item Name="deps" Type="Folder"/>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Ballard XML VIs" Type="Folder">
 				<Item Name="Ballard XML Generator.Add Default Value.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Add Default Value.vi"/>
@@ -144,6 +143,7 @@
 				<Item Name="Read Excel (xlsx).vi" Type="VI" URL="../SubVIs/Support/Read Excel (xlsx).vi"/>
 				<Item Name="reshape array (AIM-1553).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553).vi"/>
 				<Item Name="reshape array (AIM-1553-frames).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553-frames).vi"/>
+				<Item Name="reshape array (AIM-1553-hw).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553-hw).vi"/>
 				<Item Name="reshape array (AIM-1553-messages).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553-messages).vi"/>
 				<Item Name="reshape array (AIM-1553-parameters).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553-parameters).vi"/>
 				<Item Name="Select Self Test Bus Channels.vi" Type="VI" URL="../SubVIs/Support/Select Self Test Bus Channels.vi"/>
@@ -161,9 +161,11 @@
 			</Item>
 		</Item>
 		<Item Name="XML Serializers" Type="Folder">
-			<Item Name="AIM_429_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Aim_Parameter_ni/AIM_429_Parameter_ni.lvlib"/>
+			<Item Name="AIM_429_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Aim_429_Parameter_ni/AIM_429_Parameter_ni.lvlib"/>
 			<Item Name="AIM_1553_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Aim_1553_Parameter_ni/AIM_1553_Parameter_ni.lvlib"/>
-			<Item Name="Ballard_429_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Ballard_Parameter_ni/Ballard_429_Parameter_ni.lvlib"/>
+			<Item Name="Ballard_429_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Ballard_429_Parameter_ni/Ballard_429_Parameter_ni.lvlib"/>
+			<Item Name="Ballard_1553_Hardware_ni.lvlib" Type="Library" URL="../Libraries/Ballard_1553_Hardware_ni/Ballard_1553_Hardware_ni.lvlib"/>
+			<Item Name="Ballard_1553_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Ballard_1553_Parameter_ni/Ballard_1553_Parameter_ni.lvlib"/>
 		</Item>
 		<Item Name="Icon.ico" Type="Document" URL="../../builds/Support/Icon.ico"/>
 		<Item Name="Main (1553).vi" Type="VI" URL="../Main (1553).vi"/>
@@ -438,7 +440,23 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="Add Channel.vi" Type="VI" URL="../Libraries/Aim_Parameter_ni/Add Channel.vi"/>
+			<Item Name="Add Label.vi" Type="VI" URL="../Libraries/Aim_Parameter_ni/Add Label.vi"/>
+			<Item Name="Add Parameter.vi" Type="VI" URL="../Libraries/Aim_Parameter_ni/Add Parameter.vi"/>
+			<Item Name="AIM_429_Parameter_ni.dll" Type="Document" URL="../Assemblies/Aim_429_Parameter_ni/bin/Debug/AIM_429_Parameter_ni.dll"/>
+			<Item Name="AIM_429_Parameter_ni.dll" Type="Document" URL="../Assemblies/Aim_Parameter_ni/bin/Debug/AIM_429_Parameter_ni.dll"/>
 			<Item Name="AIM_1553_Parameter_ni.dll" Type="Document" URL="../Assemblies/Aim_1553_Parameter_ni/bin/Debug/AIM_1553_Parameter_ni.dll"/>
+			<Item Name="Ballard_429_Parameter_ni.dll" Type="Document" URL="../Assemblies/Ballard_429_Parameter_ni/bin/Debug/Ballard_429_Parameter_ni.dll"/>
+			<Item Name="Ballard_1553_Parameter_ni.dll" Type="Document" URL="../Assemblies/Ballard_1553_Parameter_ni/bin/Debug/Ballard_1553_Parameter_ni.dll"/>
+			<Item Name="BTIXML_SerDes.dll" Type="Document" URL="../../../Ballard-MIL-STD-1553-Custom-Device/Source/System Explorer/SubVIs/Parse XML Ballard/1.2/BTIXML_SerDes.dll"/>
+			<Item Name="BusController_type.ctl" Type="VI" URL="../Libraries/Ballard_1553_Hardware_ni/_typedefs/BusController_type.ctl"/>
+			<Item Name="label_type.ctl" Type="VI" URL="../Libraries/Aim_Parameter_ni/_tyedefs/label_type.ctl"/>
+			<Item Name="mscorlib" Type="VI" URL="mscorlib">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="parameter_type.ctl" Type="VI" URL="../Libraries/Aim_Parameter_ni/_tyedefs/parameter_type.ctl"/>
+			<Item Name="Parameters_Arinc429_XML_Tools.dll" Type="Document" URL="../Assemblies/Ballard_429_Parameter_ni/obj/Debug/Parameters_Arinc429_XML_Tools.dll"/>
+			<Item Name="Parameters_Arinc429_XML_Tools.dll" Type="Document" URL="../Assemblies/Ballard_Parameter_ni/bin/Debug/Parameters_Arinc429_XML_Tools.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Application" Type="EXE">
