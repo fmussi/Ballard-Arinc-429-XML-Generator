@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<parameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <channel>
+    <hardwareChannel>0</hardwareChannel>
+    <terminals>
+      <terminal>
+        <terminalAddress>0</terminalAddress>
+        <terminalName>BC</terminalName>
+      </terminal>
+    </terminals>
+    <message>
+      <name>BC to RT1 (SA2)</name>
+      <address>
+        <terminalAddress>1</terminalAddress>
+        <subAddress>2</subAddress>
+        <direction>Rx</direction>
+      </address>
+      <messageType>BC to RT</messageType>
+      <numberOfWords>1</numberOfWords>
+      <createTimestampChannel>true</createTimestampChannel>
+      <parameters>
+        <parameter>
+          <encoding>BNR</encoding>
+          <signed>true</signed>
+          <startBit>0</startBit>
+          <numberOfBits>16</numberOfBits>
+          <name>param1</name>
+          <unit>pascal</unit>
+          <defaultValue>0</defaultValue>
+        </parameter>
+      </parameters>
+    </message>
+  </channel>
+</parameters>

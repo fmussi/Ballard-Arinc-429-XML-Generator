@@ -1,0 +1,37 @@
+<bti:core xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" ID="0" name="CoreName" schemaVersion="1.2">
+	<bti:coreConfiguration>
+		<bti:sequentialLog/>
+		<bti:builtInTest/>
+		<bti:pxi/>
+		<bti:sysMon/>
+		<bti:timing/>
+	</bti:coreConfiguration>
+	<bti:channel1553 ID="2" name="channel1553 ID2" amplitudePercent="50">
+		<bti:simulation>
+			<bti:busMonitor ID="3" name="busMonitorID3"/>
+			<bti:busController ID="4" name="busController ID4" defaultGap="8" timeout="19">
+				<bti:messageBuffers>
+					<bti:messageBuffer ID="6" name="messageBuffer ID6"/>
+				</bti:messageBuffers>
+				<bti:messages>
+					<bti:messageCommand ID="5" name="BC to RT1 (SA2)" messageBufferIDRef="6" retryCount="0">
+						<bti:messageBCRT taVal1="1" saVal1="2"/>
+					</bti:messageCommand>
+				</bti:messages>
+				<bti:minorFrames>
+					<bti:minorFrame ID="7" name="MinorFrame1" frameTime="1000">
+						<bti:commandMessageRef messageIDRef="5"/>
+					</bti:minorFrame>
+				</bti:minorFrames>
+				<bti:majorFrames>
+					<bti:majorFrame ID="8" name="MajorFrame1" loopCount="0">
+						<bti:minorFrameRef minorFrameIDRef="7"/>
+					</bti:majorFrame>
+				</bti:majorFrames>
+				<bti:acyclicFrames/>
+			</bti:busController>
+			<bti:remoteTerminals/>
+			<bti:errorInjection errorMessages="Tagged"/>
+		</bti:simulation>
+	</bti:channel1553>
+</bti:core>

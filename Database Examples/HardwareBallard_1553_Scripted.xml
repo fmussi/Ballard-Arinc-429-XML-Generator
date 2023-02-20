@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<core xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0" name="CoreName" schemaVersion="1.2" xmlns="http://www.ballardtech.com/DatabusSchemas/">
+  <coreConfiguration>
+    <sequentialLog />
+    <builtInTest />
+    <pxi />
+    <sysMon />
+    <timing irigControlVal="00000000" timerRollover="0" timeInputThreshVal="0000" driftInputThreshVal="0000" />
+  </coreConfiguration>
+  <channel1553 ID="1" name="channel1553">
+    <simulation>
+      <busMonitor ID="7" name="busMonitor" />
+      <busController ID="2" name="testBC" scheduleIDRef="6">
+        <messageBuffers>
+          <messageBuffer ID="3" name="testBCmsgBuffer">
+            <messageData>
+              <messageDataWord>0000</messageDataWord>
+            </messageData>
+          </messageBuffer>
+        </messageBuffers>
+        <messages>
+          <messageCommand ID="4" name="testBCmsg" messageBufferIDRef="3" retryCount="0">
+            <messageBCRT taVal1="1" saVal1="2" />
+          </messageCommand>
+        </messages>
+        <minorFrames>
+          <minorFrame ID="5" name="testMinorFrame" frameTime="200">
+            <commandMessageRef messageIDRef="4" />
+          </minorFrame>
+        </minorFrames>
+        <majorFrames>
+          <majorFrame ID="6" name="testMajorFrame">
+            <minorFrameRef minorFrameIDRef="5" />
+          </majorFrame>
+        </majorFrames>
+      </busController>
+      <remoteTerminals />
+      <errorInjection errorMessages="Tagged" />
+    </simulation>
+  </channel1553>
+</core>
