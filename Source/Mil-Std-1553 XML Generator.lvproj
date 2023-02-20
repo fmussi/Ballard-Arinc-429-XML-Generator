@@ -40,6 +40,7 @@
 				<Item Name="deserialize (Messages).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Messages).vi"/>
 				<Item Name="deserialize (Parameters).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Parameters).vi"/>
 				<Item Name="xlsx to Cluster (AIM - 1553).vi" Type="VI" URL="../1553/_subVIs/parsers/xlsx to Cluster (AIM - 1553).vi"/>
+				<Item Name="xlsx to Cluster (Ballard - 1553).vi" Type="VI" URL="../1553/_subVIs/parsers/xlsx to Cluster (Ballard - 1553).vi"/>
 			</Item>
 			<Item Name="Parameter XML Write (AIM-1533).vi" Type="VI" URL="../1553/_subVIs/Parameter XML Write (AIM-1533).vi"/>
 			<Item Name="Parameter XML Write (Ballard-1533).vi" Type="VI" URL="../1553/_subVIs/Parameter XML Write (Ballard-1533).vi"/>
@@ -175,7 +176,6 @@
 		</Item>
 		<Item Name="Icon.ico" Type="Document" URL="../../builds/Support/Icon.ico"/>
 		<Item Name="Main (1553).vi" Type="VI" URL="../Main (1553).vi"/>
-		<Item Name="xlsx to Cluster (Ballard - 1553).vi" Type="VI" URL="../1553/_subVIs/parsers/xlsx to Cluster (Ballard - 1553).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="1553 - Initialize a Local Device.vi" Type="VI" URL="/&lt;instrlib&gt;/_AIM MIL-STD-1553/PCI-1553 Mid-Level Release/1553 - Initialize a Local Device.vi"/>
@@ -828,6 +828,7 @@
 			<Item Name="Ballard_429_Parameter_ni.dll" Type="Document" URL="../Assemblies/Ballard_429_Parameter_ni/bin/Debug/Ballard_429_Parameter_ni.dll"/>
 			<Item Name="Ballard_1553_Parameter_ni.dll" Type="Document" URL="../Assemblies/Ballard_1553_Parameter_ni/bin/Debug/Ballard_1553_Parameter_ni.dll"/>
 			<Item Name="BTIXML_SerDes.dll" Type="Document" URL="../../../Ballard-MIL-STD-1553-Custom-Device/Source/System Explorer/SubVIs/Parse XML Ballard/1.2/BTIXML_SerDes.dll"/>
+			<Item Name="build xml file path (AIM).vi" Type="VI" URL="../SubVIs/Support/build xml file path (AIM).vi"/>
 			<Item Name="BusController_type.ctl" Type="VI" URL="../Libraries/Ballard_1553_Hardware_ni/_typedefs/BusController_type.ctl"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
