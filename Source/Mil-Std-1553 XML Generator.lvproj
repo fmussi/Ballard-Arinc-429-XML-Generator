@@ -26,22 +26,30 @@
 			<Item Name="_controls" Type="Folder">
 				<Item Name="1553_Data.ctl" Type="VI" URL="../1553/_controls/1553_Data.ctl"/>
 				<Item Name="1553_formatting.ctl" Type="VI" URL="../1553/_controls/1553_formatting.ctl"/>
-				<Item Name="1553_messages.ctl" Type="VI" URL="../1553/_controls/1553_messages.ctl"/>
 				<Item Name="1553_minorFrames.ctl" Type="VI" URL="../1553/_controls/1553_minorFrames.ctl"/>
 				<Item Name="1553_Parameters.ctl" Type="VI" URL="../1553/_controls/1553_Parameters.ctl"/>
 				<Item Name="1553_Parameters_key.ctl" Type="VI" URL="../1553/_controls/1553_Parameters_key.ctl"/>
-				<Item Name="1553_RT_list.ctl" Type="VI" URL="../1553/_controls/1553_RT_list.ctl"/>
 				<Item Name="1553_State.ctl" Type="VI" URL="../1553/_controls/1553_State.ctl"/>
 				<Item Name="aim1553_cluster.ctl" Type="VI" URL="../1553/_controls/aim1553_cluster.ctl"/>
+				<Item Name="aim1553_messages.ctl" Type="VI" URL="../1553/_controls/aim1553_messages.ctl"/>
+				<Item Name="aim1553_RT_list.ctl" Type="VI" URL="../1553/_controls/aim1553_RT_list.ctl"/>
 			</Item>
 			<Item Name="parsers" Type="Folder">
-				<Item Name="deserialize (Frames).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Frames).vi"/>
-				<Item Name="deserialize (HW).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (HW).vi"/>
-				<Item Name="deserialize (Messages).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Messages).vi"/>
-				<Item Name="deserialize (Parameters).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Parameters).vi"/>
+				<Item Name="deserializers" Type="Folder">
+					<Item Name="deserialize (Frames).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Frames).vi"/>
+					<Item Name="deserialize (Frames-AIM).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Frames-AIM).vi"/>
+					<Item Name="deserialize (Frames-Ballard).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Frames-Ballard).vi"/>
+					<Item Name="deserialize (HW-AIM).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (HW-AIM).vi"/>
+					<Item Name="deserialize (HW-Ballard).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (HW-Ballard).vi"/>
+					<Item Name="deserialize (Messages-AIM).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Messages-AIM).vi"/>
+					<Item Name="deserialize (Messages-Ballard).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Messages-Ballard).vi"/>
+					<Item Name="deserialize (Parameters-AIM).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Parameters-AIM).vi"/>
+					<Item Name="deserialize (Parameters-Ballard).vi" Type="VI" URL="../1553/_subVIs/parsers/deserialize (Parameters-Ballard).vi"/>
+				</Item>
 				<Item Name="xlsx to Cluster (AIM - 1553).vi" Type="VI" URL="../1553/_subVIs/parsers/xlsx to Cluster (AIM - 1553).vi"/>
 				<Item Name="xlsx to Cluster (Ballard - 1553).vi" Type="VI" URL="../1553/_subVIs/parsers/xlsx to Cluster (Ballard - 1553).vi"/>
 			</Item>
+			<Item Name="Hardware XML Write (Ballard-1533).vi" Type="VI" URL="../1553/_subVIs/Hardware XML Write (Ballard-1533).vi"/>
 			<Item Name="Parameter XML Write (AIM-1533).vi" Type="VI" URL="../1553/_subVIs/Parameter XML Write (AIM-1533).vi"/>
 			<Item Name="Parameter XML Write (Ballard-1533).vi" Type="VI" URL="../1553/_subVIs/Parameter XML Write (Ballard-1533).vi"/>
 		</Item>
@@ -174,8 +182,13 @@
 			<Item Name="Ballard_1553_Hardware_ni.lvlib" Type="Library" URL="../Libraries/Ballard_1553_Hardware_ni/Ballard_1553_Hardware_ni.lvlib"/>
 			<Item Name="Ballard_1553_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Ballard_1553_Parameter_ni/Ballard_1553_Parameter_ni.lvlib"/>
 		</Item>
+		<Item Name="ballard1553_cluster.ctl" Type="VI" URL="../1553/_controls/ballard1553_cluster.ctl"/>
+		<Item Name="ballard1553_messages.ctl" Type="VI" URL="../1553/_controls/ballard1553_messages.ctl"/>
+		<Item Name="ballard1553_RT_list.ctl" Type="VI" URL="../1553/_controls/ballard1553_RT_list.ctl"/>
 		<Item Name="Icon.ico" Type="Document" URL="../../builds/Support/Icon.ico"/>
 		<Item Name="Main (1553).vi" Type="VI" URL="../Main (1553).vi"/>
+		<Item Name="reshape array (Ballard-1553).vi" Type="VI" URL="../SubVIs/Support/reshape array (Ballard-1553).vi"/>
+		<Item Name="reshape array (Ballard-1553-messages).vi" Type="VI" URL="../SubVIs/Support/reshape array (Ballard-1553-messages).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="1553 - Initialize a Local Device.vi" Type="VI" URL="/&lt;instrlib&gt;/_AIM MIL-STD-1553/PCI-1553 Mid-Level Release/1553 - Initialize a Local Device.vi"/>
