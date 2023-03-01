@@ -22,23 +22,139 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Controls" Type="Folder" URL="../Controls">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="429" Type="Folder">
+			<Item Name="_controls" Type="Folder">
+				<Item Name="ARINCParam.ctl" Type="VI" URL="../Controls/ARINCParam.ctl"/>
+				<Item Name="Ballard_Channel Array.ctl" Type="VI" URL="../Controls/Ballard_Channel Array.ctl"/>
+				<Item Name="Ballard_Channel.ctl" Type="VI" URL="../Controls/Ballard_Channel.ctl"/>
+				<Item Name="Ballard_Label.ctl" Type="VI" URL="../Controls/Ballard_Label.ctl"/>
+				<Item Name="Ballard_Word.ctl" Type="VI" URL="../Controls/Ballard_Word.ctl"/>
+				<Item Name="Channel Setup.ctl" Type="VI" URL="../Controls/Channel Setup.ctl"/>
+				<Item Name="Channel Speed.ctl" Type="VI" URL="../Controls/Channel Speed.ctl"/>
+				<Item Name="Channel_direction.ctl" Type="VI" URL="../Controls/Channel_direction.ctl"/>
+				<Item Name="ChannelParams.ctl" Type="VI" URL="../Controls/ChannelParams.ctl"/>
+				<Item Name="Data.ctl" Type="VI" URL="../Controls/Data.ctl"/>
+				<Item Name="Database_Array.ctl" Type="VI" URL="../Controls/Database_Array.ctl"/>
+				<Item Name="Encoding.ctl" Type="VI" URL="../Controls/Encoding.ctl"/>
+				<Item Name="excelRefContainer.ctl" Type="VI" URL="../Controls/excelRefContainer.ctl"/>
+				<Item Name="LabelInfo.ctl" Type="VI" URL="../Controls/LabelInfo.ctl"/>
+				<Item Name="LabelParam.ctl" Type="VI" URL="../Controls/LabelParam.ctl"/>
+				<Item Name="Refresh Match Settings.ctl" Type="VI" URL="../Controls/Refresh Match Settings.ctl"/>
+				<Item Name="State.ctl" Type="VI" URL="../Controls/State.ctl"/>
+			</Item>
+			<Item Name="_subVIs" Type="Folder">
+				<Item Name="Ballard XML VIs" Type="Folder">
+					<Item Name="Ballard XML Generator.Add Default Value.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Add Default Value.vi"/>
+					<Item Name="Ballard XML Generator.Add Hardware Channel.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Add Hardware Channel.vi"/>
+					<Item Name="Ballard XML Generator.Add Label.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Add Label.vi"/>
+					<Item Name="Ballard XML Generator.Add Parameter Properties Multiple.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Add Parameter Properties Multiple.vi"/>
+					<Item Name="Ballard XML Generator.Add Parameter Properties.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Add Parameter Properties.vi"/>
+					<Item Name="Ballard XML Generator.Add Raw Data.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Add Raw Data.vi"/>
+					<Item Name="Ballard XML Generator.Add SSM Channel.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Add SSM Channel.vi"/>
+					<Item Name="Ballard XML Generator.Close Channel.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Close Channel.vi"/>
+					<Item Name="Ballard XML Generator.Close Channel429.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Close Channel429.vi"/>
+					<Item Name="Ballard XML Generator.Close Core.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Close Core.vi"/>
+					<Item Name="Ballard XML Generator.Close Label.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Close Label.vi"/>
+					<Item Name="Ballard XML Generator.Close Labels.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Close Labels.vi"/>
+					<Item Name="Ballard XML Generator.Close Message Buffer.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Close Message Buffer.vi"/>
+					<Item Name="Ballard XML Generator.Close Message Buffers.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Close Message Buffers.vi"/>
+					<Item Name="Ballard XML Generator.Close Message.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Close Message.vi"/>
+					<Item Name="Ballard XML Generator.Close Messages.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Close Messages.vi"/>
+					<Item Name="Ballard XML Generator.Close Parameter.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Close Parameter.vi"/>
+					<Item Name="Ballard XML Generator.Close Parameters.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Close Parameters.vi"/>
+					<Item Name="Ballard XML Generator.Close Rx Channel.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Close Rx Channel.vi"/>
+					<Item Name="Ballard XML Generator.Close Tx Channel.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Close Tx Channel.vi"/>
+					<Item Name="Ballard XML Generator.Core Configuration.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Core Configuration.vi"/>
+					<Item Name="Ballard XML Generator.End Section Comment.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.End Section Comment.vi"/>
+					<Item Name="Ballard XML Generator.HW Instructions.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.HW Instructions.vi"/>
+					<Item Name="Ballard XML Generator.New Line.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.New Line.vi"/>
+					<Item Name="Ballard XML Generator.Open Channel.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Open Channel.vi"/>
+					<Item Name="Ballard XML Generator.Open Channel429.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Open Channel429.vi"/>
+					<Item Name="Ballard XML Generator.Open Core.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Open Core.vi"/>
+					<Item Name="Ballard XML Generator.Open Label.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Open Label.vi"/>
+					<Item Name="Ballard XML Generator.Open Labels.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Open Labels.vi"/>
+					<Item Name="Ballard XML Generator.Open Message Buffer.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Open Message Buffer.vi"/>
+					<Item Name="Ballard XML Generator.Open Message Buffers.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Open Message Buffers.vi"/>
+					<Item Name="Ballard XML Generator.Open Message.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Open Message.vi"/>
+					<Item Name="Ballard XML Generator.Open Messages.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Open Messages.vi"/>
+					<Item Name="Ballard XML Generator.Open Parameter.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Open Parameter.vi"/>
+					<Item Name="Ballard XML Generator.Open Parameters.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Open Parameters.vi"/>
+					<Item Name="Ballard XML Generator.Open Rx Channel.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Open Rx Channel.vi"/>
+					<Item Name="Ballard XML Generator.Open Tx Channel.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Open Tx Channel.vi"/>
+					<Item Name="Ballard XML Generator.Other Params.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Other Params.vi"/>
+					<Item Name="Ballard XML Generator.Params Instructions.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Params Instructions.vi"/>
+					<Item Name="Ballard XML Generator.Rx Section Comment.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Rx Section Comment.vi"/>
+					<Item Name="Ballard XML Generator.Tab.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Tab.vi"/>
+					<Item Name="Ballard XML Generator.Tx Section Comment.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.Tx Section Comment.vi"/>
+					<Item Name="Ballard XML Generator.XML Version.vi" Type="VI" URL="../SubVIs/Ballard XML VIs/Ballard XML Generator.XML Version.vi"/>
+				</Item>
+				<Item Name="Ryans XML VIs" Type="Folder">
+					<Item Name="Generate HW Config XML.vi" Type="VI" URL="../SubVIs/Ryans XML VIs/Generate HW Config XML.vi"/>
+					<Item Name="Generate Mappings.vi" Type="VI" URL="../SubVIs/Ryans XML VIs/Generate Mappings.vi"/>
+					<Item Name="Generate Param Config XML.vi" Type="VI" URL="../SubVIs/Ryans XML VIs/Generate Param Config XML.vi"/>
+				</Item>
+				<Item Name="Support" Type="Folder">
+					<Item Name="build xml file path (AIM).vi" Type="VI" URL="../SubVIs/Support/build xml file path (AIM).vi"/>
+					<Item Name="build xml file path (Ballard).vi" Type="VI" URL="../SubVIs/Support/build xml file path (Ballard).vi"/>
+					<Item Name="build xml file path.vi" Type="VI" URL="../SubVIs/Support/build xml file path.vi"/>
+					<Item Name="Check Database For Entry Errors.vi" Type="VI" URL="../SubVIs/Support/Check Database For Entry Errors.vi"/>
+					<Item Name="Close Excel Ref.vi" Type="VI" URL="../SubVIs/Support/Close Excel Ref.vi"/>
+					<Item Name="Contiguous Value Search.vi" Type="VI" URL="../SubVIs/Support/Contiguous Value Search.vi"/>
+					<Item Name="convert excel to xml encoding (ni).vi" Type="VI" URL="../SubVIs/Support/convert excel to xml encoding (ni).vi"/>
+					<Item Name="convert excel to xml encoding (ni-aim).vi" Type="VI" URL="../SubVIs/Support/convert excel to xml encoding (ni-aim).vi"/>
+					<Item Name="convert sdi to xml encoding (ni).vi" Type="VI" URL="../SubVIs/Support/convert sdi to xml encoding (ni).vi"/>
+					<Item Name="Display Error.vi" Type="VI" URL="../SubVIs/Support/Display Error.vi"/>
+					<Item Name="Fetch Excel (xlsx).vi" Type="VI" URL="../SubVIs/Support/Fetch Excel (xlsx).vi"/>
+					<Item Name="Format HW label name.vi" Type="VI" URL="../SubVIs/Support/Format HW label name.vi"/>
+					<Item Name="Get Active List - By Channel Number.vi" Type="VI" URL="../SubVIs/Support/Get Active List - By Channel Number.vi"/>
+					<Item Name="Get Active List - By Core Number.vi" Type="VI" URL="../SubVIs/Support/Get Active List - By Core Number.vi"/>
+					<Item Name="Get Active List - By Label Decimal.vi" Type="VI" URL="../SubVIs/Support/Get Active List - By Label Decimal.vi"/>
+					<Item Name="Get Active List - By SDI.vi" Type="VI" URL="../SubVIs/Support/Get Active List - By SDI.vi"/>
+					<Item Name="Get Active List.vi" Type="VI" URL="../SubVIs/Support/Get Active List.vi"/>
+					<Item Name="Get Reset ID.vi" Type="VI" URL="../SubVIs/Support/Get Reset ID.vi"/>
+					<Item Name="Insert SSM and SDI.vi" Type="VI" URL="../SubVIs/Support/Insert SSM and SDI.vi"/>
+					<Item Name="Open Excel File.vi" Type="VI" URL="../SubVIs/Support/Open Excel File.vi"/>
+					<Item Name="Open Excel Ref.vi" Type="VI" URL="../SubVIs/Support/Open Excel Ref.vi"/>
+					<Item Name="Parameter Filter - By Channel Number.vi" Type="VI" URL="../SubVIs/Support/Parameter Filter - By Channel Number.vi"/>
+					<Item Name="Parameter Filter - By Core Number.vi" Type="VI" URL="../SubVIs/Support/Parameter Filter - By Core Number.vi"/>
+					<Item Name="Parameter Filter - By Label Decimal.vi" Type="VI" URL="../SubVIs/Support/Parameter Filter - By Label Decimal.vi"/>
+					<Item Name="Parameter Filter - By SDI.vi" Type="VI" URL="../SubVIs/Support/Parameter Filter - By SDI.vi"/>
+					<Item Name="Parameter Filter.vi" Type="VI" URL="../SubVIs/Support/Parameter Filter.vi"/>
+					<Item Name="Read Excel (xlsx).vi" Type="VI" URL="../SubVIs/Support/Read Excel (xlsx).vi"/>
+					<Item Name="reshape array (AIM-1553).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553).vi"/>
+					<Item Name="reshape array (AIM-1553-frames).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553-frames).vi"/>
+					<Item Name="reshape array (AIM-1553-hw).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553-hw).vi"/>
+					<Item Name="reshape array (AIM-1553-messages).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553-messages).vi"/>
+					<Item Name="reshape array (AIM-1553-parameters).vi" Type="VI" URL="../SubVIs/Support/reshape array (AIM-1553-parameters).vi"/>
+					<Item Name="reshape array (Ballard-1553).vi" Type="VI" URL="../SubVIs/Support/reshape array (Ballard-1553).vi"/>
+					<Item Name="reshape array (Ballard-1553-hw).vi" Type="VI" URL="../SubVIs/Support/reshape array (Ballard-1553-hw).vi"/>
+					<Item Name="reshape array (Ballard-1553-messages).vi" Type="VI" URL="../SubVIs/Support/reshape array (Ballard-1553-messages).vi"/>
+					<Item Name="Select Self Test Bus Channels.vi" Type="VI" URL="../SubVIs/Support/Select Self Test Bus Channels.vi"/>
+					<Item Name="Write to Text File (with Core and Type).vi" Type="VI" URL="../SubVIs/Support/Write to Text File (with Core and Type).vi"/>
+					<Item Name="xlsx to Cluster.vi" Type="VI" URL="../SubVIs/Support/xlsx to Cluster.vi"/>
+				</Item>
+				<Item Name="Write XML VIs" Type="Folder">
+					<Item Name="HW XML Rx - Write.vi" Type="VI" URL="../SubVIs/Write XML VIs/HW XML Rx - Write.vi"/>
+					<Item Name="HW XML Tx - Write.vi" Type="VI" URL="../SubVIs/Write XML VIs/HW XML Tx - Write.vi"/>
+					<Item Name="Parameter XML Rx - Write.vi" Type="VI" URL="../SubVIs/Write XML VIs/Parameter XML Rx - Write.vi"/>
+					<Item Name="Parameter XML Tx - Write old.vi" Type="VI" URL="../SubVIs/Write XML VIs/Parameter XML Tx - Write old.vi"/>
+					<Item Name="Parameter XML Tx - Write.vi" Type="VI" URL="../SubVIs/Write XML VIs/Parameter XML Tx - Write.vi"/>
+					<Item Name="Parameter XML Write (ni-AIM).vi" Type="VI" URL="../SubVIs/Write XML VIs/Parameter XML Write (ni-AIM).vi"/>
+					<Item Name="Parameter XML Write (ni-ballard).vi" Type="VI" URL="../SubVIs/Write XML VIs/Parameter XML Write (ni-ballard).vi"/>
+				</Item>
+			</Item>
 		</Item>
+		<Item Name="_tests" Type="Folder"/>
 		<Item Name="deps" Type="Folder">
 			<Item Name="AIM_429_Parameter_ni.dll" Type="Document" URL="../Assemblies/Aim_Parameter_ni/bin/Debug/AIM_429_Parameter_ni.dll"/>
 			<Item Name="Parameters_Arinc429_XML_Tools.dll" Type="Document" URL="../Assemblies/Ballard_Parameter_ni/bin/Debug/Parameters_Arinc429_XML_Tools.dll"/>
 		</Item>
-		<Item Name="SubVIs" Type="Folder" URL="../SubVIs">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
 		<Item Name="XML Serializers" Type="Folder">
-			<Item Name="AIM_429_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Aim_Parameter_ni/AIM_429_Parameter_ni.lvlib"/>
-			<Item Name="AIM_1553_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Aim_1553_Parameter_ni/AIM_1553_Parameter_ni.lvlib"/>
-			<Item Name="Ballard_429_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Ballard_Parameter_ni/Ballard_429_Parameter_ni.lvlib"/>
+			<Item Name="AIM_429_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Aim_429_Parameter_ni/AIM_429_Parameter_ni.lvlib"/>
+			<Item Name="Ballard_429_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Ballard_429_Parameter_ni/Ballard_429_Parameter_ni.lvlib"/>
 		</Item>
 		<Item Name="Icon.ico" Type="Document" URL="../../builds/Support/Icon.ico"/>
-		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
+		<Item Name="Main (429).vi" Type="VI" URL="../Main (429).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="1D Array to String__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/1D Array to String__ogtk.vi"/>
@@ -310,7 +426,17 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="AIM_1553_Parameter_ni.dll" Type="Document" URL="../Assemblies/Aim_1553_Parameter_ni/bin/Debug/AIM_1553_Parameter_ni.dll"/>
+			<Item Name="1553_minorFrames.ctl" Type="VI" URL="../1553/_controls/1553_minorFrames.ctl"/>
+			<Item Name="1553_Parameters.ctl" Type="VI" URL="../1553/_controls/1553_Parameters.ctl"/>
+			<Item Name="1553_Parameters_key.ctl" Type="VI" URL="../1553/_controls/1553_Parameters_key.ctl"/>
+			<Item Name="aim1553_cluster.ctl" Type="VI" URL="../1553/_controls/aim1553_cluster.ctl"/>
+			<Item Name="aim1553_messages.ctl" Type="VI" URL="../1553/_controls/aim1553_messages.ctl"/>
+			<Item Name="aim1553_RT_list.ctl" Type="VI" URL="../1553/_controls/aim1553_RT_list.ctl"/>
+			<Item Name="AIM_429_Parameter_ni.dll" Type="Document" URL="../Assemblies/Aim_429_Parameter_ni/bin/Debug/AIM_429_Parameter_ni.dll"/>
+			<Item Name="ballard1553_cluster.ctl" Type="VI" URL="../1553/_controls/ballard1553_cluster.ctl"/>
+			<Item Name="ballard1553_hw_map.ctl" Type="VI" URL="../1553/_controls/ballard1553_hw_map.ctl"/>
+			<Item Name="ballard1553_RT_list.ctl" Type="VI" URL="../1553/_controls/ballard1553_RT_list.ctl"/>
+			<Item Name="Ballard_429_Parameter_ni.dll" Type="Document" URL="../Assemblies/Ballard_429_Parameter_ni/bin/Debug/Ballard_429_Parameter_ni.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Application" Type="EXE">
@@ -342,7 +468,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{146A1715-91EF-46DF-AFE1-FED632CEE082}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main (429).vi</Property>
 				<Property Name="Source[1].newName" Type="Str">Ballard Arinc-429 XML Generator.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Window has title bar</Property>
 				<Property Name="Source[1].properties[0].value" Type="Bool">true</Property>

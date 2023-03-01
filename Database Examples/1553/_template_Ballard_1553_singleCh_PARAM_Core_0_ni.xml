@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<parameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <channel>
+    <hardwareChannel>0</hardwareChannel>
+    <terminals>
+      <terminal>
+        <terminalAddress>0</terminalAddress>
+        <terminalName>BC</terminalName>
+      </terminal>
+      <terminal>
+        <terminalAddress>1</terminalAddress>
+        <terminalName>RT_1</terminalName>
+      </terminal>
+      <terminal>
+        <terminalAddress>2</terminalAddress>
+        <terminalName>RT_2</terminalName>
+      </terminal>
+    </terminals>
+    <message>
+      <name>BC to RT1</name>
+      <address>
+        <terminalAddress>1</terminalAddress>
+        <subAddress>5</subAddress>
+        <direction>Rx</direction>
+      </address>
+      <messageType>BC to RT</messageType>
+      <numberOfWords>1</numberOfWords>
+      <createTimestampChannel>true</createTimestampChannel>
+      <parameters>
+        <parameter>
+          <encoding>BNR</encoding>
+          <signed>true</signed>
+          <startBit>0</startBit>
+          <numberOfBits>16</numberOfBits>
+          <name>Param1</name>
+          <unit>m</unit>
+          <defaultValue>0</defaultValue>
+        </parameter>
+      </parameters>
+    </message>
+    <message>
+      <name>BC to RT2</name>
+      <address>
+        <terminalAddress>2</terminalAddress>
+        <subAddress>5</subAddress>
+        <direction>Rx</direction>
+      </address>
+      <messageType>BC to RT</messageType>
+      <numberOfWords>1</numberOfWords>
+      <createTimestampChannel>true</createTimestampChannel>
+      <parameters>
+        <parameter>
+          <encoding>BNR</encoding>
+          <signed>true</signed>
+          <startBit>0</startBit>
+          <numberOfBits>16</numberOfBits>
+          <name>Param2</name>
+          <unit>m</unit>
+          <defaultValue>0</defaultValue>
+        </parameter>
+      </parameters>
+    </message>
+  </channel>
+</parameters>

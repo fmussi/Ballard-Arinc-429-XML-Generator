@@ -71,9 +71,7 @@
 		</Item>
 		<Item Name="deps" Type="Folder"/>
 		<Item Name="XML Serializers" Type="Folder">
-			<Item Name="AIM_429_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Aim_429_Parameter_ni/AIM_429_Parameter_ni.lvlib"/>
 			<Item Name="AIM_1553_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Aim_1553_Parameter_ni/AIM_1553_Parameter_ni.lvlib"/>
-			<Item Name="Ballard_429_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Ballard_429_Parameter_ni/Ballard_429_Parameter_ni.lvlib"/>
 			<Item Name="Ballard_1553_Hardware_ni.lvlib" Type="Library" URL="../Libraries/Ballard_1553_Hardware_ni/Ballard_1553_Hardware_ni.lvlib"/>
 			<Item Name="Ballard_1553_Parameter_ni.lvlib" Type="Library" URL="../Libraries/Ballard_1553_Parameter_ni/Ballard_1553_Parameter_ni.lvlib"/>
 		</Item>
@@ -609,10 +607,7 @@
 				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="AIM_429_Parameter_ni.dll" Type="Document" URL="../Assemblies/Aim_429_Parameter_ni/bin/Debug/AIM_429_Parameter_ni.dll"/>
-			<Item Name="AIM_429_Parameter_ni.dll" Type="Document" URL="../Assemblies/Aim_Parameter_ni/bin/Debug/AIM_429_Parameter_ni.dll"/>
 			<Item Name="AIM_1553_Parameter_ni.dll" Type="Document" URL="../Assemblies/Aim_1553_Parameter_ni/bin/Debug/AIM_1553_Parameter_ni.dll"/>
-			<Item Name="Ballard_429_Parameter_ni.dll" Type="Document" URL="../Assemblies/Ballard_429_Parameter_ni/bin/Debug/Ballard_429_Parameter_ni.dll"/>
 			<Item Name="Ballard_1553_Parameter_ni.dll" Type="Document" URL="../Assemblies/Ballard_1553_Parameter_ni/bin/Debug/Ballard_1553_Parameter_ni.dll"/>
 			<Item Name="BTIXML_SerDes.dll" Type="Document" URL="../../../Ballard-MIL-STD-1553-Custom-Device/Source/System Explorer/SubVIs/Parse XML Ballard/1.2/BTIXML_SerDes.dll"/>
 			<Item Name="build xml file path (AIM).vi" Type="VI" URL="../SubVIs/Support/build xml file path (AIM).vi"/>

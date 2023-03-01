@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<core xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0" name="CoreName" schemaVersion="1.2" xmlns="http://www.ballardtech.com/DatabusSchemas/">
+  <coreConfiguration>
+    <sequentialLog perChannelStreaming="false" />
+    <builtInTest />
+    <pxi />
+    <sysMon />
+    <timing irigControlVal="00000000" timerRollover="0" timeInputThreshVal="0000" driftInputThreshVal="0000" />
+  </coreConfiguration>
+  <channel1553 ID="1" name="CH0" hardwareChannel="0">
+    <simulation>
+      <busController ID="2" name="BC" scheduleIDRef="9">
+        <messageBuffers>
+          <messageBuffer ID="3" name="BC to RT1_msgbuf">
+            <messageData>
+              <messageDataWord>0000</messageDataWord>
+            </messageData>
+          </messageBuffer>
+          <messageBuffer ID="5" name="BC to RT2_msgbuf">
+            <messageData>
+              <messageDataWord>0000</messageDataWord>
+            </messageData>
+          </messageBuffer>
+        </messageBuffers>
+        <messages>
+          <messageCommand ID="4" name="BC to RT1" messageBufferIDRef="3" monitor="true" retryCount="0">
+            <messageBCRT taVal1="1" saVal1="5" />
+          </messageCommand>
+          <messageCommand ID="6" name="BC to RT2" messageBufferIDRef="5" monitor="true" retryCount="0">
+            <messageBCRT taVal1="2" saVal1="5" />
+          </messageCommand>
+        </messages>
+        <minorFrames>
+          <minorFrame ID="7" name="MinorFrame1" frameTime="2000">
+            <commandMessageRef messageIDRef="4" />
+          </minorFrame>
+          <minorFrame ID="8" name="MinorFrame2" frameTime="2000">
+            <commandMessageRef messageIDRef="6" />
+          </minorFrame>
+        </minorFrames>
+        <majorFrames>
+          <majorFrame ID="9" name="MajorFrame1">
+            <minorFrameRef minorFrameIDRef="7" />
+            <minorFrameRef minorFrameIDRef="8" />
+          </majorFrame>
+        </majorFrames>
+      </busController>
+      <remoteTerminals>
+        <remoteTerminal ID="10" name="RT1" rtAddress="1" initialSwd="0000">
+          <messageBuffers>
+            <messageBuffer ID="11" name="BC to RT1_msgbuf">
+              <messageData>
+                <messageDataWord>0000</messageDataWord>
+              </messageData>
+            </messageBuffer>
+          </messageBuffers>
+          <subAddress ID="12" name="SA_5" messageBufferIDRef="11" monitor="true" subAddress="5" direction="Rx" />
+        </remoteTerminal>
+        <remoteTerminal ID="13" name="RT2" rtAddress="2" initialSwd="0000">
+          <messageBuffers>
+            <messageBuffer ID="14" name="BC to RT2_msgbuf">
+              <messageData>
+                <messageDataWord>0000</messageDataWord>
+              </messageData>
+            </messageBuffer>
+          </messageBuffers>
+          <subAddress ID="15" name="SA_5" messageBufferIDRef="14" monitor="true" subAddress="5" direction="Rx" />
+        </remoteTerminal>
+      </remoteTerminals>
+      <errorInjection errorMessages="Tagged" />
+    </simulation>
+  </channel1553>
+</core>
