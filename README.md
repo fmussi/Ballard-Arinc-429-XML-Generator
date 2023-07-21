@@ -1,14 +1,25 @@
 # Ballard-Arinc-429-XML-Generator
-This tool is used to generate hardware and parameter files for use with the Ballard Arinc-429 card and the VeriStand Custom Device https://github.com/NIVeriStandAdd-Ons/Ballard-Arinc-429-Custom-Device. The input to the tool is a flattened Microsoft Excel database file (.xlsx) and the output is a Hardware Configuration File (.xml) and a Parameter Configuration File (.xml) for each core defined in the database. Once created, the XML files can be imported in the custom device to populate the VeriStand System Explorer and appropriate channels.
+This tool is used to generate hardware and parameter files for use with the Ballard Arinc-429 card and the 2 VeriStand Custom Devices available: 
+- https://github.com/NIVeriStandAdd-Ons/Ballard-Arinc-429-Custom-Device (aka NIVeriStandAdd-Ons)
+- https://github.com/ni/niveristand-ballard-arinc429-custom-device (aka ni)
+
+The input to the tool is a flattened Microsoft Excel database file (.xlsx) and the output is a Hardware Configuration File (.xml) and a Parameter Configuration File (.xml) for each core defined in the database. Once created, the XML files can be imported in the custom device to populate the VeriStand System Explorer and appropriate channels.
 
 # LabVIEW Version
-LabVIEW 2017
+LabVIEW 2020
 
 # Built Availability
-TBD
+Go to Releases section
+
+# How to manually build
+1) go to `Source/Assemblies/Ballard_Parameter_ni/` and build the Visual Studio solution (Visual Studio IDE needed)
+2) go to `Source` folder and open the `Ballard Arinc-429 XML Generator.lvproj` file. Be sure that the dll built during step 1 is correctly linked
+3) Build Application and Package build specifications to obtain your package to install
 
 # Quality, Limitations
-This IP is new.
+This IP currently does not support:
+- Creating Asynchronous labels transmission
+- Label names is fixed to the format `label <label number in decimal form>_<sdi value (skip if 4)>`
 
 # Dependencies
 [OpenG Array Library 4.1.1.14 or Higher] vipm://oglib_array?repo_url=http://www.jkisoft.com/packages

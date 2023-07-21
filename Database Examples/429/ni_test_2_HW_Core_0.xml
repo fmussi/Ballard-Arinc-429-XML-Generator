@@ -1,0 +1,43 @@
+<bti:core xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" ID="0" name="Core_0" schemaVersion="1.0">
+	<bti:coreConfiguration>
+		<bti:sequentialLog perChannelStreaming="false"/>
+		<bti:builtInTest/>
+		<bti:pxi/>
+		<bti:sysMon/>
+		<bti:timing/>
+	</bti:coreConfiguration>
+
+
+<!--***************************************	Rx Channels ***************************************-->
+	<bti:channel429 ID="1" name="Channel 0" hardwareChannel="0" monitorMode="Selective">
+		<bti:rxChannel speedKHz="100">
+			<bti:labels>
+				<bti:label ID="2" name="label 7" labelDecimal="7" monitor="true"/>
+				<bti:label ID="3" name="label 23" labelDecimal="23" monitor="true"/>
+			</bti:labels>
+		</bti:rxChannel>
+	</bti:channel429>
+
+<!--***************************************	Tx Channels ***************************************-->
+	<bti:channel429 ID="4" name="Channel 17" hardwareChannel="17">
+		<bti:txChannel speedKHz="100" scheduleMode="Rate" scheduleBuildUnit="Millisecond" highVolt="10" lowVolt="-10" nullVolt="0" cmBiasVolt="0" highRiseTime="1.8" lowRiseTime="1.8">
+			<bti:messages>
+				<bti:message ID="5" name="label 7" messageBufferIDRef="6" minRate="10" maxRate="10" labelDecimal="7">
+					<bti:messageBuffers>
+						<bti:messageBuffer ID="6" name="MessageBuffer_label 7">
+							<bti:rawData>8AAAA8AA</bti:rawData>
+						</bti:messageBuffer>
+					</bti:messageBuffers>
+				</bti:message>
+				<bti:message ID="7" name="label 23" messageBufferIDRef="8" minRate="10" maxRate="10" labelDecimal="23">
+					<bti:messageBuffers>
+						<bti:messageBuffer ID="8" name="MessageBuffer_label 23">
+							<bti:rawData>8AAAA8AA</bti:rawData>
+						</bti:messageBuffer>
+					</bti:messageBuffers>
+				</bti:message>
+			</bti:messages>
+		</bti:txChannel>
+	</bti:channel429>
+
+</bti:core>

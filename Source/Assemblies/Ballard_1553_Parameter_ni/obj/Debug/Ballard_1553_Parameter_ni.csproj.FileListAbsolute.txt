@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\GIT\Ballard-Arinc-429-XML-Generator\Source\Assemblies\Ballard_1553_Parameter_ni\bin\Debug\Ballard_1553_Parameter_ni.dll
+C:\Users\Administrator\Desktop\GIT\Ballard-Arinc-429-XML-Generator\Source\Assemblies\Ballard_1553_Parameter_ni\bin\Debug\Ballard_1553_Parameter_ni.pdb
+C:\Users\Administrator\Desktop\GIT\Ballard-Arinc-429-XML-Generator\Source\Assemblies\Ballard_1553_Parameter_ni\obj\Debug\Ballard_1553_Parameter_ni.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\GIT\Ballard-Arinc-429-XML-Generator\Source\Assemblies\Ballard_1553_Parameter_ni\obj\Debug\Ballard_1553_Parameter_ni.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\GIT\Ballard-Arinc-429-XML-Generator\Source\Assemblies\Ballard_1553_Parameter_ni\obj\Debug\Ballard_1553_Parameter_ni.dll
+C:\Users\Administrator\Desktop\GIT\Ballard-Arinc-429-XML-Generator\Source\Assemblies\Ballard_1553_Parameter_ni\obj\Debug\Ballard_1553_Parameter_ni.pdb
