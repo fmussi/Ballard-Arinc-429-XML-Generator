@@ -197,7 +197,6 @@
 				<Item Name="Delete Elements from 2D Array (U64)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Delete Elements from 2D Array (U64)__ogtk.vi"/>
 				<Item Name="Delete Elements from 2D Array (Variant)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Delete Elements from 2D Array (Variant)__ogtk.vi"/>
 				<Item Name="Delete Elements from Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Delete Elements from Array__ogtk.vi"/>
-				<Item Name="End of Line Constant (bug fix).vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/End of Line Constant (bug fix).vi"/>
 				<Item Name="Filter 1D Array (Boolean)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Filter 1D Array (Boolean)__ogtk.vi"/>
 				<Item Name="Filter 1D Array (CDB)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Filter 1D Array (CDB)__ogtk.vi"/>
 				<Item Name="Filter 1D Array (CSG)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Filter 1D Array (CSG)__ogtk.vi"/>
@@ -432,7 +431,10 @@
 			<Item Name="aim1553_cluster.ctl" Type="VI" URL="../1553/_controls/aim1553_cluster.ctl"/>
 			<Item Name="aim1553_messages.ctl" Type="VI" URL="../1553/_controls/aim1553_messages.ctl"/>
 			<Item Name="aim1553_RT_list.ctl" Type="VI" URL="../1553/_controls/aim1553_RT_list.ctl"/>
-			<Item Name="AIM_429_Parameter_ni.dll" Type="Document" URL="../Assemblies/Aim_429_Parameter_ni/bin/Debug/AIM_429_Parameter_ni.dll"/>
+			<Item Name="AIM_429_Parameter_ni" Type="VI" URL="AIM_429_Parameter_ni">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="AIM_429_Parameter_ni.dll" Type="Document" URL="../../../../../Administrator/Desktop/GIT/Ballard-Arinc-429-XML-Generator/Source/Assemblies/Aim_429_Parameter_ni/bin/Debug/AIM_429_Parameter_ni.dll"/>
 			<Item Name="ballard1553_cluster.ctl" Type="VI" URL="../1553/_controls/ballard1553_cluster.ctl"/>
 			<Item Name="ballard1553_hw_map.ctl" Type="VI" URL="../1553/_controls/ballard1553_hw_map.ctl"/>
 			<Item Name="ballard1553_RT_list.ctl" Type="VI" URL="../1553/_controls/ballard1553_RT_list.ctl"/>
@@ -722,17 +724,7 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="loopbackSupported.vi" Type="VI" URL="../../../../Azdo/emea-aim-429-instrument-driver-1201/examples_dev/loopbackSupported.vi"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="instr.lib" Type="Folder">
-				<Item Name="AIM429LV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_ARINC-429/AIM429LV.lvlib"/>
-				<Item Name="Channel Interrupt Info.ctl" Type="VI" URL="/&lt;instrlib&gt;/AIM GmbH/_ARINC-429/VIs/TypeDefinitions/Channel Interrupt Info.ctl"/>
-				<Item Name="Replay Config.ctl" Type="VI" URL="/&lt;instrlib&gt;/AIM GmbH/_ARINC-429/VIs/TypeDefinitions/Replay Config.ctl"/>
-			</Item>
-			<Item Name="vi.lib" Type="Folder">
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
-			</Item>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
