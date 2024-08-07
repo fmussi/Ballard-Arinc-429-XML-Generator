@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<parameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <channel>
+    <hardwareChannel>0</hardwareChannel>
+    <label>
+      <labelOctal>350</labelOctal>
+      <sdi>01</sdi>
+      <createTimestampChannel>true</createTimestampChannel>
+      <createSDIChannel>true</createSDIChannel>
+      <createSSMChannel>true</createSSMChannel>
+      <createParityChannel>true</createParityChannel>
+      <parameter>
+        <direction>incoming</direction>
+        <encoding>BNR</encoding>
+        <signed>true</signed>
+        <startBit>11</startBit>
+        <numberOfBits>16</numberOfBits>
+        <scale>1</scale>
+        <offset>0</offset>
+        <name>Altitude_Rx</name>
+        <unit />
+        <defaultValue>0</defaultValue>
+      </parameter>
+    </label>
+  </channel>
+  <channel>
+    <hardwareChannel>24</hardwareChannel>
+    <label>
+      <labelOctal>350</labelOctal>
+      <sdi>01</sdi>
+      <createSDIChannel>true</createSDIChannel>
+      <createSSMChannel>true</createSSMChannel>
+      <createParityChannel>true</createParityChannel>
+      <parameter>
+        <direction>outgoing</direction>
+        <encoding>BNR</encoding>
+        <signed>true</signed>
+        <startBit>11</startBit>
+        <numberOfBits>16</numberOfBits>
+        <scale>1</scale>
+        <offset>0</offset>
+        <name>Altitude_Tx</name>
+        <unit />
+        <defaultValue>0</defaultValue>
+      </parameter>
+    </label>
+  </channel>
+</parameters>
