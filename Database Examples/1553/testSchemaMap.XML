@@ -1,0 +1,16 @@
+<bti:core xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" ID="0" name="CoreName" schemaVersion="1.2">
+	<bti:coreConfiguration>
+		<bti:sequentialLog/>
+		<bti:builtInTest/>
+		<bti:pxi/>
+		<bti:sysMon/>
+		<bti:timing/>
+	</bti:coreConfiguration>
+	<bti:channel1553 ID="2" name="channel1553 ID2" amplitudePercent="50" modeCodes="MC1" broadcast="true">
+		<bti:simulation>
+			<bti:busMonitor ID="3" name="busMonitorID3"/>
+			<bti:remoteTerminals/>
+			<bti:errorInjection errorMessages="Tagged"/>
+		</bti:simulation>
+	</bti:channel1553>
+</bti:core>
